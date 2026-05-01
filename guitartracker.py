@@ -189,7 +189,7 @@ def process_frame(frame, model):
     all_lines = list(fret_lines)
     if nut_line is not None:
         all_lines.append(nut_line)
-    all_lines.sort(key=line_position)
+    all_lines.sort(key=line_position, reverse=True)
 
     # nut має бути першим у списку — якщо він в кінці, перевертаємо
     if nut_line is not None:
